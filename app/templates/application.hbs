@@ -1,12 +1,16 @@
 {{page-title "EmberjsTut"}}
 
 {{!-- The following component displays Ember's default welcome message. --}}
-
-<h1>My application</h1>
+<LinkTo @route='cart' class="cart-link">
+    <i class="fa fa-shopping-cart"></i>
+</LinkTo>
+<main class="container mt-5">
+    <LinkTo @route="item" @model="2">Product 1</LinkTo>
+    <LinkTo @route="item" @model="1">Product 2</LinkTo>
+</main>
 
 
 {{!-- Feel free to remove this! --}}
 
 
 {{outlet}}  
-<WelcomePage />

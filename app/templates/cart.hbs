@@ -1,0 +1,35 @@
+<main class="container mt-5">
+    <div class="row">
+        <div class="col">
+       
+            <h1>Shopping Cart</h1>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb" class="bg-dark bg-gradient p-2 text-white">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><LinkTo @route="index" >Home</LinkTo></li>
+                    <li class="breadcrumb-item">Shopping Cart</li>
+                </ol>
+            </nav>
+            <section class="w-100 text-end">
+                <table class="w-50 ms-auto  mb-5 table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Subtotal</th>
+                            <th scope="col">{{ this.subtotal }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">Tax</td>
+                            <td>{{ this.tax }}</td>
+                        </tr>
+                         <tr>
+                            <td scope="row">Total</td>
+                            <td>{{ this.total }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-success float-end">Check out</button>
+            </section>
+        </div>
+    </div>
+</main>
