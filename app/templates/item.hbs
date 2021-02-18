@@ -1,5 +1,7 @@
 {{page-title "Item"}}
-
-
-item {{ this.model }} works 
-{{outlet}}
+<LinkTo @route='cart' class="cart-link">
+    <i class="fa fa-shopping-cart"></i>
+</LinkTo>
+<main class="container mt-5">
+    item {{ this.model }} works 
+</main>
