@@ -1,7 +1,16 @@
 {{page-title "Item"}}
-<LinkTo @route='cart' class="cart-link">
-    <i class="fa fa-shopping-cart"></i>
-</LinkTo>
-<main class="container mt-5">
+<GeneralContainer> 
     item {{ this.model }} works 
-</main>
+    <div class="product shadow-none rounded-0">
+        <Product::Image/>
+        <Product::Details/>
+    </div>
+    <h5 class="mt-5">Features</h5>
+    <ul class="">
+        <li>asdlfkasldf asfasdf </li>
+        <li>asdlfkasldf asfasdf </li>
+        <li>asdlfkasldf asfasdf </li>
+        <li>asdlfkasldf asfasdf </li>
+        <li>asdlfkasldf asfasdf </li>
+    </ul>
+</GeneralContainer> 
